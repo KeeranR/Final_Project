@@ -10,7 +10,7 @@ public class Animation extends Actor
 {
     // instance variables - replace the example below with your own
     private int actCycleNum;
-    private GreenfootImage[] animation = new GreenfootImage[69];
+    private GreenfootImage[] animation = new GreenfootImage[40];
     /**
      * Constructor for objects of class Animation
      */
@@ -44,7 +44,7 @@ public class Animation extends Actor
         if(theWorld.animationStarted() == true)
         {
             //set the image to animation at actCycleNum mod 
-            setImage( animation[ actCycleNum % 50 ]);
+            setImage( animation[ actCycleNum % 40 ]);
             actCycleNum++;
             Greenfoot.delay(10);
             //Increment actCycleNum by 1
