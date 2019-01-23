@@ -127,6 +127,30 @@ public class MyWorld extends greenfoot.World
 
     public void randumbLoop()
     {
+        /**
+         * if spaceDown == true
+         *  showText will say Piskel Skills Starts In at the width of the world divided by 2 and at the
+         *   height of the world divided by 2
+         *  showText will say 3 at the width of the world divided by 2 and at the height of the world 
+         *   divided by 2 plus 30
+         *  actCycleCount increase by 1 increment
+         * 
+         *  if actCycle count is greater or equal to 60
+         *   showText will say 2 at the width of the world divided by 2 and at the height of the world
+         *    divided by 2 plus 30
+         *    
+         *  if actCycleCount is greater or equal to 120
+         *   showText will say 2 at the width of the world divided by 2 and at the height of the world 
+         *    divided by 2 plus 30
+         *  
+         *  if actCycleCount is greater or equal to 225
+         *   showText will be blank at the width of the world divided by 2 and at the height of the 
+         *    world divided by 2
+         *   showText will be blank at the width of the world divided by 2 and at the height of the 
+         *    world divided by 2 plus 30
+         *   startAnimation = true 
+         * 
+         */
         if(spaceDown == true)
         {
             showText("Piskel Skills Starts In", getWidth()/2, getHeight()/2);
@@ -159,6 +183,7 @@ public class MyWorld extends greenfoot.World
 
     public boolean animationStarted()
     {
+        //returns startAnimation
         return startAnimation;
     }
 }

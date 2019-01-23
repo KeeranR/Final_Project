@@ -10,6 +10,8 @@ public class Animation extends Actor
 {
     // instance variables - replace the example below with your own
     private int actCycleNum;
+
+    //private greenfoootImage that adds 40 of the 90 pictures
     private GreenfootImage[] animation = new GreenfootImage[40];
     /**
      * Constructor for objects of class Animation
@@ -18,10 +20,10 @@ public class Animation extends Actor
     {
         //This is to call setupImages so it can work in the code.
         setupImages();
-        
+
         //This makes actCycleNum equal to zero, so it can increase by 1 every act cycle
         actCycleNum = 0;
-        
+
         //This makes the background the first image of the collection of images i have
         setImage(animation[0]);
     }
@@ -35,19 +37,24 @@ public class Animation extends Actor
             animation[i-1] = new GreenfootImage( i + ".PNG" );
         }
     }
-    
+
     public void act()
     {
         //Create a MyWorld variable that stores a reference to your MyWorld
         MyWorld theWorld = (MyWorld)getWorld();
+
         //If animation has started (use your MyWorld variable and a method from MyWorld)
         if(theWorld.animationStarted() == true)
         {
             //set the image to animation at actCycleNum mod 
             setImage( animation[ actCycleNum % 40 ]);
-            actCycleNum++;
-            Greenfoot.delay(10);
+
             //Increment actCycleNum by 1
+            actCycleNum++;
+
+            //sets a delay by 10
+            Greenfoot.delay(10);
+
         }
     }
 }
