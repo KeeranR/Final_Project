@@ -1,3 +1,13 @@
+/**
+ * PROJECT TITLE: Greenfoot Final Project
+ * PURPOSE OF PROJECT: To show the teacher (mr hardman) if we have learned everything up to this point in the greenfoot section of PTEC.
+ * TEACHERS NAME: Mr Hardman
+ * VERSION or DATE: 1/23/2019
+ * HOW TO START THIS PROJECT: Click Run, then enter your name
+ * AUTHORS: Keeran Rattan. props to Desmond and Rory for the help with the images. And to Mr Hardman for the image changer.
+ * USER INSTRUCTIONS: Enter Your Name, Press Space, And Watch The Magic Begin
+ */
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import javax.swing.JOptionPane;
 /**
@@ -148,8 +158,7 @@ public class MyWorld extends greenfoot.World
          *    world divided by 2
          *   showText will be blank at the width of the world divided by 2 and at the height of the 
          *    world divided by 2 plus 30
-         *   startAnimation = true 
-         * 
+         *   startAnimation = true  
          */
         if(spaceDown == true)
         {
